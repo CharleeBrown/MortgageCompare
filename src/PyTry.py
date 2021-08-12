@@ -13,8 +13,17 @@ def main():
         rentPay = int(input())
         percentage = round((monthlyPrice/rentPay)*100,2)
         print("You would pay " + str(percentage) + "% of the rent that you pay now")
+        return rentPay
+    
+    def PerCheck(price):
+        _perCheck = round(price /2,2)
+        print("For your rent, save $" + str(_perCheck) + " per check")
+    
 
-    mortgageEstimate()
+
+    PerCheck(mortgageEstimate())
+  
+        
 
 if __name__ == "__main__":
     main()
