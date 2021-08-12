@@ -1,6 +1,4 @@
 def main():
-    import locale
-    locale.setlocale(locale.LC_ALL,'')
     def mortgageEstimate():
         print("Total Price of Home?")
         totalPrice = int(input())
@@ -15,8 +13,6 @@ def main():
         rentPay = int(input())
         percentage = round((monthlyPrice/rentPay)*100,2)
         print("You would pay " + str(percentage) + "% of the rent that you pay now")
-
-
 
     mortgageEstimate()
 
